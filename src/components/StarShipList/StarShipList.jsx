@@ -11,7 +11,7 @@ const StarShipList = (props) => {
   return ( 
     <>
       <div>
-        <h3>Starship List</h3>
+        <h3 className='header'>Starship List</h3>
           {ships.length ?
           <div className="icon-container">
             {ships.map((ship) => (

@@ -17,16 +17,18 @@ const ShipDetails = (props) => {
   return ( 
     <>
       <div>
-        <h3>Ship Deets</h3>
+        <h3 className='header'>Ship Deets</h3>
         {shipDetails.name ?
         <>
-          <h2>{shipDetails.name}</h2>
-          <div>Model: {shipDetails.model}</div>
-          <div>
-            <Link 
-              to='/' 
-            >Back to Ships
-            </Link>
+          <div id='ship'> 
+            <h2>{shipDetails.name}</h2>
+            <div>Model: {shipDetails.model}</div>
+            <div id='return'>
+              <Link 
+                to='/' 
+              >Back to Ships
+              </Link>
+            </div>
           </div>
         </> 
         : 
